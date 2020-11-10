@@ -1,0 +1,30 @@
+{
+    "apiVersion": "v1",
+    "data": {
+        "LITERAL": "VALOR"
+    },
+    "kind": "ConfigMap",
+    "metadata": {
+        "creationTimestamp": "2020-11-07T06:39:49Z",
+        "managedFields": [
+            {
+                "apiVersion": "v1",
+                "fieldsType": "FieldsV1",
+                "fieldsV1": {
+                    "f:data": {
+                        ".": {},
+                        "f:LITERAL": {}
+                    }
+                },
+                "manager": "oc",
+                "operation": "Update",
+                "time": "2020-11-07T06:39:49Z"
+            }
+        ],
+        "name": "myconf",
+        "namespace": "repppaso",
+        "resourceVersion": "46904810",
+        "selfLink": "/api/v1/namespaces/repppaso/configmaps/myconf",
+        "uid": "f77389be-28ef-4def-b4c0-18ef59274584"
+    }
+}
