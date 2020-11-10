@@ -14,7 +14,7 @@ echo "---> Installing application source"
 
 cp -Rf /tmp/src/*.html ./
 
-DATE=$(DATE +%Y-%m-%d)
+DATE=$(date +%Y-%m-%d)
 
 echo "pagina customizada por RMT a fecha $DATE" > ./info.html
 
