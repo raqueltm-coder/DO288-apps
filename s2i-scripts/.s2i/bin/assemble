@@ -11,11 +11,10 @@ config_s2i
 ######## CUSTOMIZATION STARTS HERE ############
 
 echo "---> Installing application source"
-
-cp -Rf /tmp/src/*.html ./
-
+cp /tmp/src/*.html ./
 DATE=$(date +%Y-%m-%d)
 
+echo "hola raquelita ${DATE}" >> ./info.html
 echo "pagina customizada por RMT a fecha $DATE" > ./info.html
 
 echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
