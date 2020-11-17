@@ -9,23 +9,14 @@ echo "---> Enabling s2i support in httpd24 image"
 config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
-echo "la customizacion de raquel"
 
-<<<<<<< HEAD
-=======
 echo "---> Installing application source"
-
->>>>>>> 83b75211d757cf9fe6ab76092b28ab2fcec36859
 cp -Rf /tmp/src/*.html ./
 
-DATE=$(date +%Y-%m-%d)
+DATE=`date "+%b %d, %Y @ %H:%M %p"`
 
-<<<<<<< HEAD
-echo "hola que tal estas raquel es dia ${DATE}. " >> ./info.html 
-=======
-echo "pagina customizada por RMT a fecha $DATE" > ./info.html
->>>>>>> 83b75211d757cf9fe6ab76092b28ab2fcec36859
-
+echo "---> Creating info page"
+echo "Page built on $DATE" >> ./info.html
 echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
